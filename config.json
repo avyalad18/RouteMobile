@@ -1,0 +1,19 @@
+{
+  "celery_config": {
+    "CELERY_BROKER_URL": "amqp://localhost:5672//",
+    "CELERY_RESULT_BACKEND": "rpc://",
+    "CELERY_ACCEPT_CONTENT": ["application/json"],
+    "CELERY_RESULT_SERIALIZER": "json",
+    "CELERY_TASK_SERIALIZER": "json",
+    "CELERY_TIMEZONE": "Asia/Kolkata",
+    "CELERY_QUEUES": {
+      "items": {
+        "exchange": "items",
+        "routing_key": "items"
+      }
+    }
+  },
+  "db_config":{
+    "path":"C:\\Users\\Avinash\\Desktop\\RouteMobile-Assignment\\routemobile\\db.sqlite3"
+  }
+}
