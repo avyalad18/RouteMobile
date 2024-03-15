@@ -38,6 +38,9 @@ To API Endpoint postman collection is provided with name `routemobile.postman_co
 
 If you face any issue make changes in env file `.env` and look for other settings in config file `config.json`. Change path accordingly.
 
+Do not forget to change `db.sqlite3` path go to file `config.json`
+and find key `path` in `db_config` section and change it
+
 How to run celery worker ?
 
 go to folder `simple_worker` and run the following command :

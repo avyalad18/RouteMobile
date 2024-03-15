@@ -17,7 +17,7 @@ app = Celery('tasks', broker=CELERY_CONF.get("CELERY_BROKER_URL"),backend=CELERY
 @app.task
 def updateItem(data): 
     # ADDED SLLEP TO SIMULATE THE PROCESS TIME
-    time.sleep(5000)
+    time.sleep(2)
     updateToDb(data.get('item'))
     return  "COMPLETE"
 
